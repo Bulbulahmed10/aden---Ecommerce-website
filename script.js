@@ -12,6 +12,8 @@ document.getElementById("remove-cart-section").addEventListener("click", () => {
   document.body.style.overflowY = "scroll";
 });
 
+//! add to cart section functionality
+
 const parentDiv = document.getElementsByClassName("product-list-side");
 
 for (const item of parentDiv) {
@@ -31,7 +33,7 @@ for (const item of parentDiv) {
   });
 }
 
-//! swiper js
+//! swiper js functionality
 
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,

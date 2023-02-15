@@ -784,16 +784,14 @@ body {
   opacity: 0.5;
 }
 
-
-.cart-btn{
+.cart-btn {
   visibility: hidden;
   padding: 10px;
   margin-left: 45px;
   margin-top: 5px;
-
 }
 
-.product-list-side:hover .cart-btn{
+.product-list-side:hover .cart-btn {
   visibility: visible;
 }
 
