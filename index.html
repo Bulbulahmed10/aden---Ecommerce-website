@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/favi-icon.jpg" type="image/x-icon" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- font-awsome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css" />
+    <title>ADEN - Ecommerce website</title>
+  </head>
+  <body>
+    <!--=-=-=-=-=-=-= top header section starts =-=-=-=-=-=-=-->
+    <section class="top-header">
+      <div class="social-icon">
+        <a title="Twitter" href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a title="Facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a title="Google Plus" href="#"
+          ><i class="fa-brands fa-google-plus-g"></i
+        ></a>
+        <a title="Pinterest" href="#"
+          ><i class="fa-brands fa-pinterest-p"></i
+        ></a>
+        <a title="Instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <div class="top-header-right-side">
+        <ul class="top-header-content-list">
+          <li>
+            language <i class="fa-solid fa-angle-down"></i>
+            <ul class="sub-menu">
+              <li>English</li>
+              <li>Frence</li>
+            </ul>
+          </li>
+
+          <li>
+            currency <i class="fa-solid fa-angle-down"></i>
+            <ul class="sub-menu">
+              <li>USD</li>
+              <li>EUR</li>
+            </ul>
+          </li>
+          <li>login/register</li>
+        </ul>
+      </div>
+    </section>
+    <!--=-=-=-=-=-=-= header section starts =-=-=-=-=-=-=-->
+    <section class="header">
+      <div class="bars">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </div>
+      <a href="#"><img class="logo" src="/img/logo.png" alt="" /></a>
+      <form class="search-form" action="">
+        <input type="text" placeholder="Search products..." />
+        <button class="global-btn search-btn">search</button>
+      </form>
+      <div class="widget">
+        <a href="#"><i class="fa-solid fa-recycle"></i></a>
+        <a href="#"><i class="fa-solid fa-heart"></i></a>
+        <a id="cart-btn" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+    </section>
+    <div class="search-form-m-p">
+      <input type="text" placeholder="Search products..." />
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <!-- =======menu section starts=========== -->
+    <section class="menu">
+      <ul class="menu-list">
+        <li><a href="#">home</a></li>
+        <li>
+          <a href="#">shop <i class="fa-solid fa-angle-down"></i></a>
+          <div class="sub-menu-2" style="width: 950px">
+            <div class="shop-sub">
+              <div>
+                <h5>shop layout</h5>
+                <ul>
+                  <li><a href="#">shop left sidebar</a></li>
+                  <li><a href="#">shop right sidebar</a></li>
+                  <li><a href="#">shop full sidebar</a></li>
+                  <li><a href="#">shop both sidebars</a></li>
+                </ul>
+              </div>
+              <div>
+                <h5>shop pages</h5>
+                <ul>
+                  <li><a href="#">my acount</a></li>
+                  <li><a href="#">my wishlist</a></li>
+                  <li><a href="#">my cart</a></li>
+                  <li><a href="#">my checkout</a></li>
+                </ul>
+              </div>
+              <div>
+                <h5>product types</h5>
+                <ul>
+                  <li><a href="#">simple product</a></li>
+                  <li><a href="#">variable product</a></li>
+                  <li><a href="#">affiliate product</a></li>
+                  <li><a href="#">grouped product</a></li>
+                </ul>
+              </div>
+              <a href="#"><img src="img/banner/banner-01.jpg" alt="" /></a>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">blog</a></li>
+        <li>
+          <a href="#">pages <i class="fa-solid fa-angle-down"></i></a>
+          <ul class="sub-menu-2">
+            <li><a href="#">frequently questions</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">error 404</a></li>
+          </ul>
+        </li>
+        <li><a href="#">about us</a></li>
+        <li><a href="#">contact us</a></li>
+        <li>
+          <a href="#">vendor zone <i class="fa-solid fa-angle-down"></i></a>
+          <ul class="sub-menu-2">
+            <li><a href="#">dashboard</a></li>
+            <li><a href="#">store list</a></li>
+            <li><a href="#">my orders</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="hot-line">
+        <i class="fa-solid fa-headset"></i>
+        <p><span>Hotline</span> <br />706-676-8245</p>
+      </div>
+    </section>
+    <div class="blur-section" id="cart-section">
+      <section class="cart">
+        <div class="product-cart-side">
+          <div class="product-info-title">
+            <div style="width: 320px">
+              <p
+                style="
+                  text-align: center;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                "
+              >
+                product
+              </p>
+            </div>
+  
+            <p>price</p>
+            <p>quantity</p>
+            <p>subtotal</p>
+          </div>
+          <div class="cart-product-list" style="padding: 0 10px">
+            <div class="cart-product-item">
+              <div style="display: flex; align-items: center; gap: 10px">
+                <p><i class="product-remove fa-solid fa-xmark"></i></p>
+                <img src="./img/catagory-img/product-01.jpg" alt="" />
+                <p class="cart-product-name">Teeworld " TW" Tee - Red</p>
+              </div>
+  
+              <p style="color: red; font-size: 18px">$<span>25</span></p>
+              <div>
+                <button class="btn-plus-minus">-</button>
+                <input class="cart-product-input-number" type="number" />
+                <button class="btn-plus-minus">+</button>
+              </div>
+              <p style="color: red; font-size: 18px">$<span>100</span></p>
+            </div>
+            <div class="cart-product-item">
+              <div style="display: flex; align-items: center; gap: 10px">
+                <p><i class="product-remove fa-solid fa-xmark"></i></p>
+                <img src="./img/catagory-img/product-01.jpg" alt="" />
+                <p class="cart-product-name">Teeworld " TW" Tee - Red</p>
+              </div>
+  
+              <p style="color: red; font-size: 18px">$<span>25</span></p>
+              <div>
+                <button class="btn-plus-minus">-</button>
+                <input class="cart-product-input-number" type="number" />
+                <button class="btn-plus-minus">+</button>
+              </div>
+              <p style="color: red; font-size: 18px">$<span>100</span></p>
+            </div>
+          </div>
+          <hr class="coupon-top-border" />
+          <div class="coupon-div">
+            <input
+              class="coupon-input-class"
+              type="text"
+              name=""
+              id=""
+              placeholder="Coupon code"
+            />
+            <button class="global-btn">apply coupon</button>
+          </div>
+        </div>
+  
+        <div class="total-price-side">
+          <div style="background-color: #fff">
+            <p
+              style="
+                text-align: center;
+                padding: 8px 0;
+                font-weight: 600;
+                font-size: 18px;
+              "
+            >
+              Cart totals
+            </p>
+          </div>
+          <div class="cart-total-container">
+            <div class="cart-total-item-name">
+              <span>subtotal</span>
+              <span>tax</span>
+              <span>total</span>
+            </div>
+            <div class="cart-total-item-name">
+              <p>$<span>100</span></p>
+              <p>$<span>10</span></p>
+              <p>$<span>110</span></p>
+            </div>
+          </div>
+          <button class="global-btn">proceed to checkout</button>
+        </div>
+        <div class="remove-cart-button">
+          <p>
+            <i id="remove-cart-section"
+              class="cart-body-remove-button product-remove fa-solid fa-xmark"
+            ></i>
+          </p>
+        </div>
+      </section>
+    </div>
+    
+    <!-- ===============hero section starts==================== -->
+    <section class="hero">
+      <div class="menu-area">
+        <ul class="categories-list">
+          <li>
+            <a href="#"
+              ><img src="img/categories/menu (1).png" /> shop by categories </a
+            ><i class="fa-solid fa-angle-right"></i>
+          </li>
+          <li id="women">
+            <a href="#"
+              ><img src="/img/categories/woman-clothes (1).png" /> women</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="img/categories/cotton-polo-shirt.png" /> men</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="img/categories/baby-clothes.png" /> children</a
+            >
+            <i class="fa-solid fa-angle-right"></i>
+          </li>
+          <li>
+            <a href="#"><img src="img/categories/blouse.png" /> tops</a>
+          </li>
+          <li>
+            <a href="#"><img src="img/categories/loose-pants.png" />bottoms</a>
+          </li>
+          <li>
+            <a href="#"><img src="img/categories/shoe.png" />shoes</a>
+          </li>
+          <li>
+            <a href="#"><img src="img/categories/school-bag.png" />bags</a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="img/categories/sunglasses.png" />accessories</a
+            >
+          </li>
+          <li>
+            <a href="#"><img src="img/categories/ellipsis.png" />others</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- <div class="women-sub-items">
+        <div>
+          <h5>women's fashion</h5>
+          <ul>
+            <li><a href="#">dresses</a></li>
+            <li><a href="#">tees</a></li>
+            <li><a href="#">blouses & shirts</a></li>
+            <li><a href="#">hoodies & sweatshirts</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>bootoms</h5>
+          <ul>
+            <li><a href="#">pants & capris</a></li>
+            <li><a href="#">leggings</a></li>
+            <li><a href="#">skirts</a></li>
+            <li><a href="#">sharts</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>women's underwear</h5>
+          <ul>
+            <li><a href="#">bras</a></li>
+            <li><a href="#">pajama sets</a></li>
+            <li><a href="#">panties</a></li>
+            <li><a href="#">shapewear</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>swimwear</h5>
+          <ul>
+            <li><a href="#">bikini sets</a></li>
+            <li><a href="#">cover-Ups</a></li>
+            <li><a href="#">belts</a></li>
+            <li><a href="#">bucket hats</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>weddings & events</h5>
+          <ul>
+            <li><a href="#">wedding dresses</a></li>
+            <li><a href="#">prom</a></li>
+            <li><a href="#">evening dresses</a></li>
+            <li><a href="#">africa clothing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>accessories</h5>
+          <ul>
+            <li><a href="#">sunglasses</a></li>
+            <li><a href="#">baseball caps</a></li>
+            <li><a href="#">pants & capris</a></li>
+            <li><a href="#">flare jeans</a></li>
+          </ul>
+        </div>
+        <img src="/img/categories/14.jpg" alt="" />
+      </div> -->
+
+      <div class="swiper mySwiper slider-side">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="hero-slider">
+              <span>new arrival</span>
+              <p>
+                fall - winter <br />
+                2022
+              </p>
+              <button class="shop-btn">shop now</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="hero-slider"
+              style="background-image: url(img/slide/slide-02.jpg)"
+            >
+              <span>new arrival</span>
+              <p>
+                spring - summer <br />
+                2022
+              </p>
+              <button class="shop-btn">shop now</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- ============our-facility section starts========== -->
+    <section class="our-facility">
+      <div class="facility-box">
+        <div><img src="img/feature/delivery-truck.png" alt="" /></div>
+        <div>
+          <span>free delivery</span>
+          <p>Free shipping worldwide</p>
+        </div>
+      </div>
+      <div class="facility-box">
+        <div><img src="img/feature/bag.png" alt="" /></div>
+        <div>
+          <span>Member Discount</span>
+          <p>Free deals everyweek</p>
+        </div>
+      </div>
+      <div class="facility-box">
+        <div><img src="img/feature/offer.png" alt="" /></div>
+        <div>
+          <span>Money Back</span>
+          <p>Refund in 30 days</p>
+        </div>
+      </div>
+      <div class="facility-box">
+        <div><img src="img/feature/secure-payment.png" alt="" /></div>
+        <div>
+          <span>Secure Payment</span>
+          <p>No transaction fees</p>
+        </div>
+      </div>
+      <div class="facility-box">
+        <div><img src="img/feature/exchange.png" alt="" /></div>
+        <div>
+          <span>Free Return</span>
+          <p>Refund in 365 days</p>
+        </div>
+      </div>
+    </section>
+    <!-- ==========banner section starts============== -->
+    <section class="banner">
+      <a href="#"><img src="/img/banner/banner-01.jpg" alt="" /></a>
+      <a href="#"><img src="/img/banner/banner-02.jpg" alt="" /></a>
+      <a href=""><img src="/img/banner/banner-03.jpg" alt="" /></a>
+    </section>
+    <!-- ==========top categories section starts============ -->
+    <section class="top-categories">
+      <h3 class="section-title"><span>top categories</span> of the month</h3>
+      <div class="categories-product">
+        <div class="categories-pro-box">
+          <div>
+            <a href="#"> <span>women</span></a>
+            <p><span>(9)</span>products</p>
+          </div>
+          <div>
+            <a href="#"
+              ><img src="/img/catagory-img/product-01.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="categories-pro-box">
+          <div>
+            <a href="#"> <span>tops</span></a>
+            <p><span>(2)</span>products</p>
+          </div>
+          <div>
+            <a href="#"
+              ><img src="/img/catagory-img/product-02.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="categories-pro-box">
+          <div>
+            <a href="#"> <span>shoes</span></a>
+            <p><span>(7)</span>products</p>
+          </div>
+          <div>
+            <a href="#"
+              ><img src="/img/catagory-img/product-03.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="categories-pro-box">
+          <div>
+            <a href="#"> <span>men</span></a>
+            <p><span>(11)</span>products</p>
+          </div>
+          <div>
+            <a href="#"
+              ><img src="/img/catagory-img/product-04.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="categories-pro-box">
+          <div>
+            <a href="#"> <span>kid</span></a>
+            <p><span>(14)</span>products</p>
+          </div>
+          <div>
+            <a href="#"
+              ><img src="/img/catagory-img/product-05.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="categories-pro-box">
+          <div>
+            <a href="#"> <span>fashion & clothing</span></a>
+            <p><span>(11)</span>products</p>
+          </div>
+          <div>
+            <a href="#"
+              ><img src="/img/catagory-img/product-06.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="categories-pro-box">
+          <div>
+            <a href="#"> <span>bootoms</span></a>
+            <p><span>(7)</span>products</p>
+          </div>
+          <div>
+            <a href="#"
+              ><img src="/img/catagory-img/product-07.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="categories-pro-box">
+          <div>
+            <a href="#"> <span>accessories</span></a>
+            <p><span>(13)</span>products</p>
+          </div>
+          <div>
+            <a href="#"
+              ><img src="/img/catagory-img/product-08.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====--==--====product section starts====--==--====--= -->
+    <!-- =========products container section starts=========== -->
+
+    <section id="products-container">
+      <!-- =========top flash section starts=========== -->
+      <section class="top-flash section-padding">
+        <div class="men-women-link">
+          <span class="men-women-btn">women</span>
+          <span class="men-women-btn">men</span>
+        </div>
+        <h3 class="section-title"><span>top flash</span> deals</h3>
+        <div class="product-list-container">
+          <div class="pro-container-banner">
+            <a href="#"><img src="/img/catagory-img/banner-01.jpg" alt="" /></a>
+          </div>
+          <div class="product-container">
+            <div class="product-list-side">
+              <img src="/img/catagory-img/product-09.jpg" alt="" />
+              <div>
+                <span>
+                  <a href="#">women,</a>
+                  <a href="#">men,</a>
+                  <a href="#">kid,....</a>
+                </span>
+                <p><a href="#">lion dance hoodie</a></p>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="money-div">
+                  <p><del>$79.00</del>$65.00</p>
+                </div>
+              </div>
+              <div class="sale">
+                <span>Sale!</span>
+              </div>
+            </div>
+            <div class="product-list-side">
+              <img src="/img/catagory-img/product-11.jpg" alt="" />
+              <div>
+                <span>
+                  <a href="#">Accessories,</a>
+                  <a href="#"> Bottoms,</a>
+                </span>
+                <p><a href="#">One World One</a></p>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="money-div">
+                  <p><del>$49.00</del>$39.00</p>
+                </div>
+              </div>
+              <div class="sale">
+                <span>Sale!</span>
+              </div>
+            </div>
+            <div class="product-list-side">
+              <img src="/img/catagory-img/product-04.jpg" alt="" />
+              <div>
+                <span>
+                  <a href="#">Accessories</a>
+                  <a href="#">Bottoms,</a>
+                </span>
+                <p><a href="#">Teeworld ” TW” Tee </a></p>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="money-div">
+                  <p><del>$28.00</del>$25.00</p>
+                </div>
+              </div>
+              <div class="sale">
+                <span>Sale!</span>
+              </div>
+            </div>
+            <div class="product-list-side">
+              <img src="/img/catagory-img/product-02.jpg" alt="" />
+              <div>
+                <span>
+                  <a href="#">Accessories,</a>
+                  <a href="#">Fashion & </a>
+                </span>
+                <p><a href="#">Teeworld Basic Tee</a></p>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="money-div">
+                  <p><del>$95.00</del>$78.00</p>
+                </div>
+              </div>
+              <div class="sale">
+                <span>Sale!</span>
+              </div>
+            </div>
+            <div class="product-list-side">
+              <img src="/img/catagory-img/product-03.jpg" alt="" />
+              <div>
+                <span>
+                  <a href="#">Bottoms, </a>
+                  <a href="#">Kid,</a>
+                  <a href="#">men,</a>
+                  <a href="#">women</a>
+                </span>
+                <p><a href="#">TW Sandals Ver.01</a></p>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="money-div">
+                  <p><del>$75.00</del>$69.00</p>
+                </div>
+              </div>
+              <div class="sale">
+                <span>Sale!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==========new products section starts=========== -->
+      <section class="new-products section-padding">
+        <div class="men-women-link">
+          <span class="men-women-btn">men</span>
+          <span class="men-women-btn">kid</span>
+        </div>
+        <h3 class="section-title"><span>new</span> products</h3>
+        <div class="product-list-container">
+          <div class="pro-container-banner">
+            <a href="#"><img src="/img/catagory-img/banner-02.jpg" alt="" /></a>
+          </div>
+          <div class="product-container">
+            <div class="product-list-side">
+              <img src="/img/catagory-img/product-07.jpg" alt="" />
+              <div>
+                <span>
+                  <a href="#">women,</a>
+                  <a href="#">men,</a>
+                  <a href="#">kid,....</a>
+                </span>
+                <p><a href="#">Teeworld ” TW” Tee</a></p>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="money-div">
+                  <p>$65.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="product-list-side">
+              <img src="/img/catagory-img/product-05.jpg" alt="" />
+              <div>
+                <span>
+                  <a href="#">Accessories,</a>
+                  <a href="#"> Bottoms,</a>
+                </span>
+                <p><a href="#">TW x TLNSG </a></p>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="money-div">
+                  <p><del>$23.00 </del>$18.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="product-list-side">
+              <img src="/img/catagory-img/product-07-01.jpg" alt="" />
+              <div>
+                <span>
+                  <a href="#">Accessories</a>
+                  <a href="#">Bottoms,</a>
+                </span>
+                <p><a href="#">Toutes Ces Choses</a></p>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="money-div">
+                  <p><del>$69.00</del>$65.00</p>
+                </div>
+              </div>
+              <div class="sale">
+                <span>Sale!</span>
+              </div>
+            </div>
+            <div class="product-list-side">
+              <img src="/img/catagory-img/product-03.jpg" alt="" />
+              <div>
+                <span>
+                  <a href="#">bottoms</a>
+                  <a href="#">kid</a>
+                  <a href="#">men</a>
+                  <a href="#">women </a>
+                </span>
+                <p><a href="#">TW Sandals Ver.01</a></p>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="money-div">
+                  <p><del>$75.00</del>$69.00</p>
+                </div>
+              </div>
+              <div class="sale">
+                <span>Sale!</span>
+              </div>
+            </div>
+            <div class="product-list-side">
+              <img src="/img/catagory-img/product-03-01.jpg" alt="" />
+              <div>
+                <span>
+                  <a href="#"> Fashion & Clothing, </a>
+                  <a href="#">Kid,</a>
+                </span>
+                <p><a href="#">Teeworld Short cap</a></p>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="money-div">
+                  <p>$75.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="product-list-side">
+              <img src="/img/catagory-img/product-04.jpg" alt="" />
+              <div>
+                <span>
+                  <a href="#"> Accessories, </a>
+                  <a href="#">Bottoms,...</a>
+                </span>
+                <p><a href="#">Teeworld ” TW” Tee </a></p>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="money-div">
+                  <p><del>$25.00</del>$20.00</p>
+                </div>
+              </div>
+              <div class="sale">
+                <span>Sale!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==========recommended products section starts=========== -->
+      <section class="recommended section-padding">
+        <div class="men-women-link">
+          <span class="men-women-btn">women</span>
+          <span class="men-women-btn">kid</span>
+        </div>
+        <h3 class="section-title"><span>recommended</span> products</h3>
+        <div class="product-list-container">
+          <div class="pro-container-banner">
+            <a href="#"><img src="/img/catagory-img/banner-03.jpg" alt="" /></a>
+          </div>
+          <div class="product-container">
+            <div class="product-list-side">
+              <img src="/img/catagory-img/product-07.jpg" alt="" />
+              <div>
+                <span>
+                  <a href="#">women,</a>
+                  <a href="#">men,</a>
+                  <a href="#">kid,....</a>
+                </span>
+                <p><a href="#">Teeworld ” TW” Tee</a></p>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="money-div">
+                  <p>$50.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="product-list-side">
+              <img src="/img/catagory-img/product-03.jpg" alt="" />
+              <div>
+                <span>
+                  <a href="#">Accessories,</a>
+                  <a href="#"> Bottoms,</a>
+                </span>
+                <p><a href="#">TW Sandals Ver.01</a></p>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="money-div">
+                  <p><del>$75.00</del>$69.00</p>
+                </div>
+              </div>
+              <div class="sale">
+                <span>Sale!</span>
+              </div>
+            </div>
+            <div class="product-list-side">
+              <img src="/img/catagory-img/product-03-01.jpg" alt="" />
+              <div>
+                <span>
+                  <a href="#">Accessories</a>
+                  <a href="#">Bottoms,</a>
+                </span>
+                <p><a href="#">Teeworld ” TW” Tee </a></p>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="money-div">
+                  <p><del>$28.00</del>$25.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="product-list-side">
+              <img src="/img/catagory-img/product-13.jpg" alt="" />
+              <div>
+                <span>
+                  <a href="#">Accessories,</a>
+                  <a href="#">Fashion & </a>
+                </span>
+                <p><a href="#">Teeworld Basic Tee</a></p>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="money-div">
+                  <p><del>$95.00</del>$78.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="product-list-side">
+              <img src="/img/catagory-img/product-11.jpg" alt="" />
+              <div>
+                <span>
+                  <a href="#">Bottoms, </a>
+                  <a href="#">Kid,</a>
+                  <a href="#">men,</a>
+                  <a href="#">women</a>
+                </span>
+                <p><a href="#">One World One</a></p>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="money-div">
+                  <p><del>$49.00</del>$39.00</p>
+                </div>
+              </div>
+              <div class="sale">
+                <span>Sale!</span>
+              </div>
+            </div>
+            <div class="product-list-side">
+              <img src="/img/catagory-img/product-09.jpg" alt="" />
+              <div>
+                <span>
+                  <a href="#">Bottoms, </a>
+                  <a href="#">Kid,</a>
+                  <a href="#">men,</a>
+                  <a href="#">women</a>
+                </span>
+                <p><a href="#">One short pant</a></p>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="money-div">
+                  <p><del>$75.00</del>$65.00</p>
+                </div>
+              </div>
+              <div class="sale">
+                <span>Sale!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- =========blogs-newsletter section starts========== -->
+    <section class="blogs-newsletter section-padding">
+      <h3 class="section-title"><span>latest</span> blogs</h3>
+      <div class="blogs-newsletter-container">
+        <div class="blog-section-side">
+          <div class="swiper blog-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="blog-card">
+                  <a href="#"
+                    ><img src="/img/blog-newletter/blog-01.jpg" alt=""
+                  /></a>
+                  <div class="blog-card-content">
+                    <span><a href="#">business</a></span>
+                    <a class="blog-card-title" href="#">post with gallery</a>
+                    <div class="admin-date">
+                      <a href="#"><i class="fa-solid fa-user"></i> admin</a>
+                      <span
+                        ><i class="fa-solid fa-clock"></i> july 9, 2019</span
+                      >
+                    </div>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Assumenda expedita aliquid quas odio at ex. Lorem ipsum
+                      dolor sit amet....
+                    </p>
+                    <a class="read-more-link" href="#">read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="blog-card">
+                  <a href="#"
+                    ><img src="/img/blog-newletter/blog-02.jpg" alt=""
+                  /></a>
+                  <div class="blog-card-content">
+                    <span><a href="#">travel</a></span>
+                    <a class="blog-card-title" href="#"
+                      >blog image post (sticky)</a
+                    >
+                    <div class="admin-date">
+                      <a href="#"><i class="fa-solid fa-user"></i> admin</a>
+                      <span
+                        ><i class="fa-solid fa-clock"></i> october 5, 2018</span
+                      >
+                    </div>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Assumenda expedita aliquid quas odio at ex. Lorem ipsum
+                      dolor sit amet....
+                    </p>
+                    <a class="read-more-link" href="#">read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="blog-card">
+                  <a href="#"
+                    ><img src="/img/blog-newletter/blog-03.jpg" alt=""
+                  /></a>
+                  <div class="blog-card-content">
+                    <span><a href="#">interior</a></span>
+                    <a class="blog-card-title" href="#"
+                      >sample post with format chat</a
+                    >
+                    <div class="admin-date">
+                      <a href="#"><i class="fa-solid fa-user"></i> admin</a>
+                      <span
+                        ><i class="fa-solid fa-clock"></i> october 10,
+                        2018</span
+                      >
+                    </div>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Assumenda expedita aliquid quas odio at ex. Lorem ipsum
+                      dolor sit amet....
+                    </p>
+                    <a class="read-more-link" href="#">read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="blog-card">
+                  <a href="#"
+                    ><img src="/img/blog-newletter/blog-04.jpg" alt=""
+                  /></a>
+                  <div class="blog-card-content">
+                    <span><a href="#">travel</a></span>
+                    <a class="blog-card-title" href="#"
+                      >sample post with format link</a
+                    >
+                    <div class="admin-date">
+                      <a href="#"><i class="fa-solid fa-user"></i> admin</a>
+                      <span
+                        ><i class="fa-solid fa-clock"></i> june 15, 2018</span
+                      >
+                    </div>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Assumenda expedita aliquid quas odio at ex. Lorem ipsum
+                      dolor sit amet....
+                    </p>
+                    <a class="read-more-link" href="#">read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="newsletter-section-side">
+          <div class="newsletter-heading-side">
+            <h4>Join Our Newsletter Now</h4>
+            <p>
+              Sign up for all the news about our latest arrivals and get an
+              <br />
+              exclusive early access shopping.
+            </p>
+            <form class="newsletter-form" action="">
+              <input type="email" placeholder="Enter Your Email Address..." />
+              <button class="global-btn search-btn">subscribe!</button>
+            </form>
+          </div>
+          <div class="follow-us-side">
+            <p>Or <span>Follow Us</span></p>
+            <p>We make consolidating, marketing and tracking your social</p>
+            <div class="social-icon">
+              <a href="#"><img src="/img/social-icon/twitter.png" alt="" /></a>
+              <a href="#"><img src="/img/social-icon/facebook.png" alt="" /></a>
+              <a href="#"
+                ><img src="/img/social-icon/instagram.png" alt=""
+              /></a>
+              <a href="#"><img src="/img/social-icon/youtube.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========footer section starts========== -->
+    <section class="footer section-padding">
+      <div class="footer-left-side">
+        <a href="#"><img src="/img/logo-white.png" alt="" /></a>
+        <p>
+          We are a team of designers and developers that create high quality
+          WordPress, Magento, Prestashop, Opencart themes.
+        </p>
+        <span>payment:</span>
+        <img src="/img/payment-icon.png" alt="" />
+      </div>
+      <div class="footer-right-side">
+        <div>
+          <h5>usefull links</h5>
+          <ul>
+            <li><a href="#">men</a></li>
+            <li><a href="#">women</a></li>
+            <li><a href="#">kid</a></li>
+            <li><a href="#">shoes</a></li>
+            <li><a href="#">tops</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Information</h5>
+          <ul>
+            <li><a href="#">cart</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">wishlist</a></li>
+            <li><a href="#">privacy policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>customer service</h5>
+          <ul>
+            <li><a href="#">testimonials</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">location & working hours</a></li>
+            <li><a href="#">our guarantee</a></li>
+            <li><a href="#">track your order</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- =========copyright section starts========== -->
+    <section class="copyright section-padding">
+      <p>
+        &copy; Copyright 2022 <a href="#">aden</a> - all rights reserved -
+        powered by <a href="#">woovina theme. </a>| copy by -
+        <a href="#">Bulbul Ahmed </a>
+      </p>
+      <p><a href="#">frequently qusetions</a>|<a href="#">privacy policy</a></p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- ======custom js file link======= -->
+    <script src="script.js"></script>
+  </body>
+</html>
