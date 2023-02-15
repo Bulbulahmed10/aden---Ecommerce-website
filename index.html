@@ -153,20 +153,27 @@
                 product
               </p>
             </div>
-  
+
             <p>price</p>
             <p>quantity</p>
             <p>subtotal</p>
           </div>
-          <div class="cart-product-list" style="padding: 0 10px">
+          <div
+            id="cart-container"
+            class="cart-product-list"
+            style="padding: 0 10px"
+          >
             <div class="cart-product-item">
               <div style="display: flex; align-items: center; gap: 10px">
                 <p><i class="product-remove fa-solid fa-xmark"></i></p>
-                <img src="./img/catagory-img/product-01.jpg" alt="" />
-                <p class="cart-product-name">Teeworld " TW" Tee - Red</p>
+                <div id="cart-image-div">
+                  <!-- <img id="cart-image" src="./img/catagory-img/product-01.jpg" alt="" /> -->
+
+                </div>
+                <p id="cart-product-item-name" class="cart-product-name">Teeworld " TW" Tee - Red</p>
               </div>
-  
-              <p style="color: red; font-size: 18px">$<span>25</span></p>
+
+              <p style="color: red; font-size: 18px"><span id="cart-item-price">25</span></p>
               <div>
                 <button class="btn-plus-minus">-</button>
                 <input class="cart-product-input-number" type="number" />
@@ -180,7 +187,7 @@
                 <img src="./img/catagory-img/product-01.jpg" alt="" />
                 <p class="cart-product-name">Teeworld " TW" Tee - Red</p>
               </div>
-  
+
               <p style="color: red; font-size: 18px">$<span>25</span></p>
               <div>
                 <button class="btn-plus-minus">-</button>
@@ -202,7 +209,7 @@
             <button class="global-btn">apply coupon</button>
           </div>
         </div>
-  
+
         <div class="total-price-side">
           <div style="background-color: #fff">
             <p
@@ -232,14 +239,15 @@
         </div>
         <div class="remove-cart-button">
           <p>
-            <i id="remove-cart-section"
+            <i
+              id="remove-cart-section"
               class="cart-body-remove-button product-remove fa-solid fa-xmark"
             ></i>
           </p>
         </div>
       </section>
     </div>
-    
+
     <!-- ===============hero section starts==================== -->
     <section class="hero">
       <div class="menu-area">
@@ -287,65 +295,6 @@
           </li>
         </ul>
       </div>
-
-      <!-- <div class="women-sub-items">
-        <div>
-          <h5>women's fashion</h5>
-          <ul>
-            <li><a href="#">dresses</a></li>
-            <li><a href="#">tees</a></li>
-            <li><a href="#">blouses & shirts</a></li>
-            <li><a href="#">hoodies & sweatshirts</a></li>
-          </ul>
-        </div>
-        <div>
-          <h5>bootoms</h5>
-          <ul>
-            <li><a href="#">pants & capris</a></li>
-            <li><a href="#">leggings</a></li>
-            <li><a href="#">skirts</a></li>
-            <li><a href="#">sharts</a></li>
-          </ul>
-        </div>
-        <div>
-          <h5>women's underwear</h5>
-          <ul>
-            <li><a href="#">bras</a></li>
-            <li><a href="#">pajama sets</a></li>
-            <li><a href="#">panties</a></li>
-            <li><a href="#">shapewear</a></li>
-          </ul>
-        </div>
-        <div>
-          <h5>swimwear</h5>
-          <ul>
-            <li><a href="#">bikini sets</a></li>
-            <li><a href="#">cover-Ups</a></li>
-            <li><a href="#">belts</a></li>
-            <li><a href="#">bucket hats</a></li>
-          </ul>
-        </div>
-        <div>
-          <h5>weddings & events</h5>
-          <ul>
-            <li><a href="#">wedding dresses</a></li>
-            <li><a href="#">prom</a></li>
-            <li><a href="#">evening dresses</a></li>
-            <li><a href="#">africa clothing</a></li>
-          </ul>
-        </div>
-        <div>
-          <h5>accessories</h5>
-          <ul>
-            <li><a href="#">sunglasses</a></li>
-            <li><a href="#">baseball caps</a></li>
-            <li><a href="#">pants & capris</a></li>
-            <li><a href="#">flare jeans</a></li>
-          </ul>
-        </div>
-        <img src="/img/categories/14.jpg" alt="" />
-      </div> -->
-
       <div class="swiper mySwiper slider-side">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -549,75 +498,7 @@
                 <div class="money-div">
                   <p><del>$79.00</del>$65.00</p>
                 </div>
-              </div>
-              <div class="sale">
-                <span>Sale!</span>
-              </div>
-            </div>
-            <div class="product-list-side">
-              <img src="/img/catagory-img/product-11.jpg" alt="" />
-              <div>
-                <span>
-                  <a href="#">Accessories,</a>
-                  <a href="#"> Bottoms,</a>
-                </span>
-                <p><a href="#">One World One</a></p>
-                <div class="stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="money-div">
-                  <p><del>$49.00</del>$39.00</p>
-                </div>
-              </div>
-              <div class="sale">
-                <span>Sale!</span>
-              </div>
-            </div>
-            <div class="product-list-side">
-              <img src="/img/catagory-img/product-04.jpg" alt="" />
-              <div>
-                <span>
-                  <a href="#">Accessories</a>
-                  <a href="#">Bottoms,</a>
-                </span>
-                <p><a href="#">Teeworld ” TW” Tee </a></p>
-                <div class="stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="money-div">
-                  <p><del>$28.00</del>$25.00</p>
-                </div>
-              </div>
-              <div class="sale">
-                <span>Sale!</span>
-              </div>
-            </div>
-            <div class="product-list-side">
-              <img src="/img/catagory-img/product-02.jpg" alt="" />
-              <div>
-                <span>
-                  <a href="#">Accessories,</a>
-                  <a href="#">Fashion & </a>
-                </span>
-                <p><a href="#">Teeworld Basic Tee</a></p>
-                <div class="stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="money-div">
-                  <p><del>$95.00</del>$78.00</p>
-                </div>
+                <button class="cart-btn global-btn">add to cart</button>
               </div>
               <div class="sale">
                 <span>Sale!</span>
@@ -627,10 +508,9 @@
               <img src="/img/catagory-img/product-03.jpg" alt="" />
               <div>
                 <span>
-                  <a href="#">Bottoms, </a>
-                  <a href="#">Kid,</a>
+                  <a href="#">women,</a>
                   <a href="#">men,</a>
-                  <a href="#">women</a>
+                  <a href="#">kid,....</a>
                 </span>
                 <p><a href="#">TW Sandals Ver.01</a></p>
                 <div class="stars">
@@ -641,8 +521,84 @@
                   <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="money-div">
-                  <p><del>$75.00</del>$69.00</p>
+                  <p><del>$79.00</del>$45.00</p>
                 </div>
+                <button class="cart-btn global-btn">add to cart</button>
+              </div>
+              <div class="sale">
+                <span>Sale!</span>
+              </div>
+            </div>
+            <div class="product-list-side">
+              <img src="/img/catagory-img/product-02.jpg" alt="" />
+              <div>
+                <span>
+                  <a href="#">women,</a>
+                  <a href="#">men,</a>
+                  <a href="#">kid,....</a>
+                </span>
+                <p><a href="#">lion dance hoodie</a></p>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="money-div">
+                  <p><del>$79.00</del>$58.00</p>
+                </div>
+                <button class="cart-btn global-btn">add to cart</button>
+              </div>
+              <div class="sale">
+                <span>Sale!</span>
+              </div>
+            </div>
+            <div class="product-list-side">
+              <img src="/img/catagory-img/product-11.jpg" alt="" />
+              <div>
+                <span>
+                  <a href="#">women,</a>
+                  <a href="#">men,</a>
+                  <a href="#">kid,....</a>
+                </span>
+                <p><a href="#">Teeworld Basic Tee</a></p>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="money-div">
+                  <p><del>$79.00</del>$47.00</p>
+                </div>
+                <button class="cart-btn global-btn">add to cart</button>
+              </div>
+              <div class="sale">
+                <span>Sale!</span>
+              </div>
+            </div>
+            <div class="product-list-side">
+              <img src="/img/catagory-img/product-04.jpg" alt="" />
+              <div>
+                <span>
+                  <a href="#">women,</a>
+                  <a href="#">men,</a>
+                  <a href="#">kid,....</a>
+                </span>
+                <p><a href="#">One World One</a></p>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="money-div">
+                  <p ><del>$79.00</del>$68.00</p>
+                </div>
+                <button class="cart-btn global-btn">add to cart</button>
               </div>
               <div class="sale">
                 <span>Sale!</span>
@@ -681,6 +637,8 @@
                 </div>
                 <div class="money-div">
                   <p>$65.00</p>
+
+                  <button class="cart-btn global-btn">add to cart</button>
                 </div>
               </div>
             </div>
@@ -701,6 +659,8 @@
                 </div>
                 <div class="money-div">
                   <p><del>$23.00 </del>$18.00</p>
+
+                  <button class="cart-btn global-btn">add to cart</button>
                 </div>
               </div>
             </div>
@@ -721,6 +681,7 @@
                 </div>
                 <div class="money-div">
                   <p><del>$69.00</del>$65.00</p>
+                  <button class="cart-btn global-btn">add to cart</button>
                 </div>
               </div>
               <div class="sale">
@@ -746,6 +707,7 @@
                 </div>
                 <div class="money-div">
                   <p><del>$75.00</del>$69.00</p>
+                  <button class="cart-btn global-btn">add to cart</button>
                 </div>
               </div>
               <div class="sale">
@@ -769,6 +731,8 @@
                 </div>
                 <div class="money-div">
                   <p>$75.00</p>
+
+                  <button class="cart-btn global-btn">add to cart</button>
                 </div>
               </div>
             </div>
@@ -789,6 +753,7 @@
                 </div>
                 <div class="money-div">
                   <p><del>$25.00</del>$20.00</p>
+                  <button class="cart-btn global-btn">add to cart</button>
                 </div>
               </div>
               <div class="sale">
@@ -828,6 +793,8 @@
                 </div>
                 <div class="money-div">
                   <p>$50.00</p>
+
+                  <button class="cart-btn global-btn">add to cart</button>
                 </div>
               </div>
             </div>
@@ -848,6 +815,7 @@
                 </div>
                 <div class="money-div">
                   <p><del>$75.00</del>$69.00</p>
+                  <button class="cart-btn global-btn">add to cart</button>
                 </div>
               </div>
               <div class="sale">
@@ -871,6 +839,7 @@
                 </div>
                 <div class="money-div">
                   <p><del>$28.00</del>$25.00</p>
+                  <button class="cart-btn global-btn">add to cart</button>
                 </div>
               </div>
             </div>
@@ -891,6 +860,7 @@
                 </div>
                 <div class="money-div">
                   <p><del>$95.00</del>$78.00</p>
+                  <button class="cart-btn global-btn">add to cart</button>
                 </div>
               </div>
             </div>
@@ -913,6 +883,7 @@
                 </div>
                 <div class="money-div">
                   <p><del>$49.00</del>$39.00</p>
+                  <button class="cart-btn global-btn">add to cart</button>
                 </div>
               </div>
               <div class="sale">
@@ -938,6 +909,7 @@
                 </div>
                 <div class="money-div">
                   <p><del>$75.00</del>$65.00</p>
+                  <button class="cart-btn global-btn">add to cart</button>
                 </div>
               </div>
               <div class="sale">
