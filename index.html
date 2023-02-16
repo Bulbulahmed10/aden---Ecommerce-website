@@ -166,38 +166,26 @@
             <div class="cart-product-item">
               <div style="display: flex; align-items: center; gap: 10px">
                 <p><i class="product-remove fa-solid fa-xmark"></i></p>
-                <div id="cart-image-div">
-                  <!-- <img id="cart-image" src="./img/catagory-img/product-01.jpg" alt="" /> -->
-                </div>
-                <p id="cart-product-item-name" class="cart-product-name">
-                  Teeworld " TW" Tee - Red
-                </p>
+                <div id="cart-image-div"></div>
+                <p id="cart-product-item-name" class="cart-product-name"></p>
               </div>
 
               <p style="color: red; font-size: 18px">
-                <span id="cart-item-price">25</span>
+                $<span id="cart-item-price"></span>
               </p>
               <div>
-                <button class="btn-plus-minus">-</button>
-                <input class="cart-product-input-number" type="number" />
-                <button class="btn-plus-minus">+</button>
+                <button class="btn-plus-minus" id="decrementButton">-</button>
+                <input
+                  id="cart-product-countity-input"
+                  class="cart-product-input-number"
+                  type="number"
+                  min="1"
+                />
+                <button class="btn-plus-minus" id="incrementButton">+</button>
               </div>
-              <p style="color: red; font-size: 18px">$<span>100</span></p>
-            </div>
-            <div class="cart-product-item">
-              <div style="display: flex; align-items: center; gap: 10px">
-                <p><i class="product-remove fa-solid fa-xmark"></i></p>
-                <img src="./img/catagory-img/product-01.jpg" alt="" />
-                <p class="cart-product-name">Teeworld " TW" Tee - Red</p>
-              </div>
-
-              <p style="color: red; font-size: 18px">$<span>25</span></p>
-              <div>
-                <button class="btn-plus-minus">-</button>
-                <input class="cart-product-input-number" type="number" />
-                <button class="btn-plus-minus">+</button>
-              </div>
-              <p style="color: red; font-size: 18px">$<span>100</span></p>
+              <p style="color: red; font-size: 18px">
+                $<span id="product-subtotal"></span>
+              </p>
             </div>
           </div>
           <hr class="coupon-top-border" />
@@ -233,9 +221,9 @@
               <span>total</span>
             </div>
             <div class="cart-total-item-name">
-              <p>$<span>100</span></p>
-              <p>$<span>10</span></p>
-              <p>$<span>110</span></p>
+              <p>$<span id="cart-total-subtotal"></span></p>
+              <p>$<span id="total-price-tax"></span></p>
+              <p>$<span id="finalTotalPrice"></span></p>
             </div>
           </div>
           <button class="global-btn">proceed to checkout</button>
@@ -499,7 +487,7 @@
                   <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="money-div">
-                  <p><del>$79.00</del>$65.00</p>
+                  <p><del>$79.00</del><span>$</span>65</p>
                 </div>
                 <button class="cart-btn global-btn">add to cart</button>
               </div>
@@ -524,7 +512,7 @@
                   <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="money-div">
-                  <p><del>$79.00</del>$45.00</p>
+                  <p><del>$79.00</del><span>$</span>45.00</p>
                 </div>
                 <button class="cart-btn global-btn">add to cart</button>
               </div>
@@ -549,7 +537,7 @@
                   <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="money-div">
-                  <p><del>$79.00</del>$58.00</p>
+                  <p><del>$79.00</del><span>$</span>58.00</p>
                 </div>
                 <button class="cart-btn global-btn">add to cart</button>
               </div>
@@ -574,7 +562,7 @@
                   <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="money-div">
-                  <p><del>$79.00</del>$47.00</p>
+                  <p><del>$79.00</del><span>$</span>47.00</p>
                 </div>
                 <button class="cart-btn global-btn">add to cart</button>
               </div>
@@ -599,7 +587,7 @@
                   <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="money-div">
-                  <p><del>$79.00</del>$68.00</p>
+                  <p><del>$79.00</del><span>$</span>68.00</p>
                 </div>
                 <button class="cart-btn global-btn">add to cart</button>
               </div>
@@ -639,7 +627,7 @@
                   <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="money-div">
-                  <p><del>$81.00 </del> $65.00</p>
+                  <p><del>$81.00</del><span>$</span>65</p>
                 </div>
                 <button class="cart-btn global-btn">add to cart</button>
               </div>
@@ -660,7 +648,7 @@
                   <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="money-div">
-                  <p><del>$23.00 </del>$18.00</p>
+                  <p><del>$23.00 </del><span>$</span>18.00</p>
                 </div>
                 <button class="cart-btn global-btn">add to cart</button>
               </div>
@@ -681,7 +669,7 @@
                   <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="money-div">
-                  <p><del>$69.00</del>$65.00</p>
+                  <p><del>$69.00</del><span>$</span>65.00</p>
                 </div>
                 <button class="cart-btn global-btn">add to cart</button>
               </div>
@@ -707,7 +695,7 @@
                   <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="money-div">
-                  <p><del>$75.00</del>$69.00</p>
+                  <p><del>$75.00</del><span>$</span>69.00</p>
                 </div>
                 <button class="cart-btn global-btn">add to cart</button>
               </div>
@@ -731,7 +719,7 @@
                   <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="money-div">
-                  <p><del>$102.00</del> $75.00</p>
+                  <p><del>$102.00</del><span>$</span>75.00</p>
                 </div>
                 <button class="cart-btn global-btn">add to cart</button>
               </div>
@@ -752,7 +740,7 @@
                   <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="money-div">
-                  <p><del>$25.00</del>$20.00</p>
+                  <p><del>$25.00</del><span>$</span>20.00</p>
                 </div>
                 <button class="cart-btn global-btn">add to cart</button>
               </div>
@@ -792,7 +780,7 @@
                   <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="money-div">
-                  <p><del>$67.00</del> $50.00</p>
+                  <p><del>$67.00</del><span>$</span>50.00</p>
                 </div>
                 <button class="cart-btn global-btn">add to cart</button>
               </div>
@@ -813,7 +801,7 @@
                   <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="money-div">
-                  <p><del>$75.00</del>$69.00</p>
+                  <p><del>$75.00</del><span>$</span>69.00</p>
                 </div>
                 <button class="cart-btn global-btn">add to cart</button>
               </div>
@@ -837,7 +825,7 @@
                   <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="money-div">
-                  <p><del>$28.00</del>$25.00</p>
+                  <p><del>$28.00</del><span>$</span>25.00</p>
                 </div>
                 <button class="cart-btn global-btn">add to cart</button>
               </div>
@@ -858,7 +846,7 @@
                   <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="money-div">
-                  <p><del>$95.00</del>$78.00</p>
+                  <p><del>$95.00</del><span>$</span>78.00</p>
                 </div>
                 <button class="cart-btn global-btn">add to cart</button>
               </div>
@@ -881,7 +869,7 @@
                   <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="money-div">
-                  <p><del>$49.00</del>$39.00</p>
+                  <p><del>$49.00</del><span>$</span>39.00</p>
                 </div>
                 <button class="cart-btn global-btn">add to cart</button>
               </div>
@@ -907,7 +895,7 @@
                   <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="money-div">
-                  <p><del>$75.00</del>$65.00</p>
+                  <p><del>$75.00</del><span>$</span>65.00</p>
                 </div>
                 <button class="cart-btn global-btn">add to cart</button>
               </div>
