@@ -69,6 +69,8 @@
         <a href="#"><i class="fa-solid fa-heart"></i></a>
         <a id="cart-btn" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
       </div>
+      <p id="total-cart-length" class="total-length-show">0</p>
+     
     </section>
     <div class="search-form-m-p">
       <input type="text" placeholder="Search products..." />
@@ -163,30 +165,7 @@
             class="cart-product-list"
             style="padding: 0 10px"
           >
-            <div class="cart-product-item">
-              <div style="display: flex; align-items: center; gap: 10px">
-                <p><i class="product-remove fa-solid fa-xmark"></i></p>
-                <div id="cart-image-div"></div>
-                <p id="cart-product-item-name" class="cart-product-name"></p>
-              </div>
-
-              <p style="color: red; font-size: 18px">
-                $<span id="cart-item-price"></span>
-              </p>
-              <div>
-                <button class="btn-plus-minus" id="decrementButton">-</button>
-                <input
-                  id="cart-product-countity-input"
-                  class="cart-product-input-number"
-                  type="number"
-                  min="1"
-                />
-                <button class="btn-plus-minus" id="incrementButton">+</button>
-              </div>
-              <p style="color: red; font-size: 18px">
-                $<span id="product-subtotal"></span>
-              </p>
-            </div>
+           
           </div>
           <hr class="coupon-top-border" />
           <div class="coupon-div">
@@ -487,7 +466,7 @@
                   <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="money-div">
-                  <p><del>$79.00</del><span>$</span>65</p>
+                  <p><del>$79.00</del><span>$</span>65.00</p>
                 </div>
                 <button class="cart-btn global-btn">add to cart</button>
               </div>
@@ -627,7 +606,7 @@
                   <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="money-div">
-                  <p><del>$81.00</del><span>$</span>65</p>
+                  <p><del>$81.00</del><span>$</span>65.00</p>
                 </div>
                 <button class="cart-btn global-btn">add to cart</button>
               </div>

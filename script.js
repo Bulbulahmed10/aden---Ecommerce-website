@@ -1,5 +1,7 @@
 //! cart section open & close functionality
 
+const productArr = [];
+
 const cartSection = document.getElementById("cart-section");
 document.getElementById("cart-btn").addEventListener("click", () => {
   document.body.style.overflowY = "hidden";
@@ -12,8 +14,6 @@ document.getElementById("remove-cart-section").addEventListener("click", () => {
   document.body.style.overflowY = "scroll";
 });
 
-
-
 //! add to cart section functionality
 
 const parentDiv = document.getElementsByClassName("product-list-side");
@@ -21,77 +21,92 @@ const parentDiv = document.getElementsByClassName("product-list-side");
 for (const item of parentDiv) {
   item.addEventListener("click", (e) => {
     if (e.target.tagName === "BUTTON") {
-
       //! fetch product image
-      document
-        .getElementById("cart-image-div")
-        .appendChild(e.target.parentNode.previousSibling.previousSibling);
-
-
+      const imageSrc =
+        e.target.parentNode.parentNode.children[0].getAttribute("src");
       //! fetch product name
-      document.getElementById("cart-product-item-name").innerText =
-        e.target.parentNode.childNodes[3].innerText;
-
-
+      const productName = e.target.parentNode.childNodes[3].innerText;
 
       //! fetch product price
       const productPrice =
         e.target.parentNode.childNodes[7].children[0].childNodes[2].data;
-      document.getElementById("cart-item-price").innerText = productPrice;
 
+      const product = {
+        name: productName,
+        price: productPrice,
+        img: imageSrc,
+        quantityNumber: 1,
+      };
 
-      //! input field
-      const cartInputField = document.getElementById(
-        "cart-product-countity-input"
+      productArr.push(product);
+
+      let allProductPriceArr = [];
+
+      for (const item of productArr) {
+        allProductPriceArr.push(parseInt(item.price));
+      }
+
+      let cartTotalSubTotalPrice = document.getElementById(
+        "cart-total-subtotal"
       );
-      let cartInputFirstValue = 1;
-      cartInputField.value = cartInputFirstValue;
+      let cartTotalPriceTax = document.getElementById("total-price-tax");
+      let finalTotalPrice = document.getElementById("finalTotalPrice");
+      let totalProductPrice = 0;
 
+      for (let i = 0; i < allProductPriceArr.length; i++) {
+        let totalPrice = (totalProductPrice += allProductPriceArr[i]);
+        cartTotalSubTotalPrice.innerText = totalPrice;
 
+        cartTotalPriceTax.innerText = (totalPrice * 0.1).toFixed(2);
+        finalTotalPrice.innerText =
+          parseInt((totalPrice * 0.1).toFixed(2)) + totalPrice;
+      }
 
-      //! subTotal & total fields
+      document.getElementById("total-cart-length").innerText =
+        productArr.length;
 
-      const subTotalField = document.getElementById("product-subtotal");
-      const cartTotalSubtotal = document.getElementById("cart-total-subtotal");
-      const totalPriceTax = document.getElementById("total-price-tax");
+      
 
-      subTotalField.innerText = parseInt(productPrice) * cartInputFirstValue;
-      console.log(cartTotalSubtotal.innerText);
-      cartTotalSubtotal.innerText = parseInt(productPrice) * cartInputFirstValue;
-      totalPriceTax.innerText = (parseInt(productPrice) * cartInputFirstValue * 0.1).toFixed(2);
+      const container = document.getElementById("cart-container");
+      container.innerHTML = "";
 
+      for (const singleItem of productArr) {
+        const newDiv = document.createElement("div");
 
-      //! increment functionality
-      const incrementButton = document.getElementById("incrementButton");
+        newDiv.innerHTML = ` <div class="cart-product-item">
+          <div style="display: flex; align-items: center; gap: 10px">
+            <p><i class="product-remove fa-solid fa-xmark"></i></p>
+            <div id="cart-image-div">
+            <img src="${singleItem.img}" alt="" /> 
+            </div>
+            <p id="cart-product-item-name" class="cart-product-name"> ${
+              singleItem.name
+            } </p>
+          </div>
 
-      incrementButton.addEventListener("click", () => {
-        decrementButton.disabled = false;
+          <p style="color: red; font-size: 18px">
+            $<span id="cart-item-price">${singleItem.price} </span>
+          </p>
+          <div>
+            <button class="btn-plus-minus" onclick="decrement()" >-</button>
+            <input
+              id="cart-product-quantity-input"
+              class="cart-product-input-number"
+              type="number"
+              min="1"
+              value=${singleItem.quantityNumber}
+            />
+            <button class="btn-plus-minus" onclick="increment()"  >+</button>
+          </div>
+          <p style="color: red; font-size: 18px">
+            $<span id="product-subtotal">${
+              singleItem.price * singleItem.quantityNumber
+            } </span>
+          </p>
+        </div>`;
 
-        cartInputField.value++;
-        let totalPrice = cartInputField.value * parseInt(productPrice);
-        subTotalField.innerText = totalPrice;
-        cartTotalSubtotal.innerText = totalPrice;
-
-        totalPriceTax.innerText = (parseInt(cartTotalSubtotal.innerText) * 0.1).toFixed(2);
-      });
-
-
-
-      //! decrement functionality
-
-      const decrementButton = document.getElementById("decrementButton");
-
-      decrementButton.addEventListener("click", () => {
-        if (cartInputField.value <= 1) {
-          decrementButton.disabled = true;
-        } else {
-          cartInputField.value--;
-          let totalPrice = cartInputField.value * parseInt(productPrice);
-          subTotalField.innerText = totalPrice;
-          cartTotalSubtotal.innerText = totalPrice;
-          totalPriceTax.innerText = (parseInt(cartTotalSubtotal.innerText) * 0.1).toFixed(2);
-        }
-      });
+        container.appendChild(newDiv);
+      }
     }
   });
 }

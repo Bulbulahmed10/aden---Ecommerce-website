@@ -231,20 +231,18 @@ body {
   margin-right: 20px;
 }
 
-.widget a::before {
+.total-length-show {
   position: absolute;
-  content: "0";
+  right: 0;
+  margin-right: 120px;
   background-color: #e01212;
-  padding: 2px;
+  width: 25px;
   text-align: center;
-  border-radius: 50%;
-  width: 40%;
-  font-size: 12px;
-  transform: translate(-50%);
-  border: none;
-  outline: none;
+  font-size: 14px;
   color: #fff;
   font-weight: 600;
+  padding: 4px;
+  border-radius: 50%;
 }
 
 .search-form-m-p {
@@ -1303,17 +1301,19 @@ body {
 }
 
 .product-remove {
+  background-color: #f5f6f9 !important;
   margin-right: 15px;
   padding: 10px 12px;
-  border: 1px solid #12121280;
+  border: 1px solid red;
   border-radius: 50%;
   cursor: pointer;
+  color: red !important;
 }
 
 .product-remove:hover {
-  background-color: red;
+  background-color: red !important;
   border: 1px solid transparent;
-  color: #fff;
+  color: #fff !important;
 }
 
 .cart-product-item img {
