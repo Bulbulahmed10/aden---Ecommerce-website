@@ -61,11 +61,46 @@ for (const item of parentDiv) {
         finalTotalPrice.innerText =
           parseInt((totalPrice * 0.1).toFixed(2)) + totalPrice;
       }
+      const applyCouponBtn = document.getElementById("apply-coupon-button");
+      const couponNoti = document.getElementById("coupon-noti");
+      applyCouponBtn.addEventListener("click", () => {
+        const couponCode = document.getElementById("apply-coupon-input");
+
+        if (couponCode.value === "BULBULA10") {
+          let couponExcludeTotalPrice = parseInt(
+            cartTotalSubTotalPrice.innerText
+          );
+
+          let couponIncludePrice =
+            couponExcludeTotalPrice - couponExcludeTotalPrice * 0.1;
+          cartTotalSubTotalPrice.innerText = couponIncludePrice;
+
+          finalTotalPrice.innerText =
+            couponIncludePrice + parseInt(cartTotalPriceTax.innerText);
+
+          couponNoti.innerText = "Successfully 10% off your subtotal price";
+          couponNoti.style.color = "blue";
+          couponCode.value = "";
+        } else if (couponCode.value === "BULBULA15") {
+          let couponExcludeTotalPrice = parseInt(
+            cartTotalSubTotalPrice.innerText
+          );
+
+          let couponIncludePrice =
+            couponExcludeTotalPrice - couponExcludeTotalPrice * 0.15;
+          cartTotalSubTotalPrice.innerText = couponIncludePrice;
+
+          finalTotalPrice.innerText =
+            couponIncludePrice + parseInt(cartTotalPriceTax.innerText);
+
+          couponNoti.innerText = "Successfully 15% off your subtotal price";
+          couponNoti.style.color = "blue";
+          couponCode.value = "";
+        } 
+      });
 
       document.getElementById("total-cart-length").innerText =
         productArr.length;
-
-      
 
       const container = document.getElementById("cart-container");
       container.innerHTML = "";
@@ -90,13 +125,15 @@ for (const item of parentDiv) {
           <div>
             <button class="btn-plus-minus" onclick="decrement()" >-</button>
             <input
-              id="cart-product-quantity-input"
+              id="cart-product-quantity-input-${singleItem.name}"
               class="cart-product-input-number"
               type="number"
               min="1"
               value=${singleItem.quantityNumber}
             />
-            <button class="btn-plus-minus" onclick="increment()"  >+</button>
+            <button class="btn-plus-minus" onclick="increment('cart-product-quantity-input-${
+              singleItem.name
+            }')"  >+</button>
           </div>
           <p style="color: red; font-size: 18px">
             $<span id="product-subtotal">${
@@ -110,6 +147,7 @@ for (const item of parentDiv) {
     }
   });
 }
+
 
 //! swiper js functionality
 

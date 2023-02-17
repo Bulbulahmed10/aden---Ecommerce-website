@@ -1294,6 +1294,8 @@ body {
 
 .cart-product-list {
   margin-top: 20px;
+  max-height: 400px;
+  overflow-y: scroll;
 }
 
 .cart-product-item {
@@ -1364,6 +1366,12 @@ body {
   font-size: 14px;
 }
 
+#coupon-noti{
+  margin-left: 20px;
+  color: #ef2f41;
+  margin-bottom: 10px;
+}
+
 .coupon-top-border {
   width: 90%;
   margin: 0 auto;
@@ -1395,6 +1403,9 @@ body {
 }
 
 .cart-total-item-name:nth-of-type(2) {
+  text-align: right;
+  font-weight: 500;
+  font-size: 18px;
   color: red;
 }
 
